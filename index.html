@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<HTML>
+<header>
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+  <!-- Riquadro nero opaco -->
+  <div class="Riquadro">
+    <!-- Logo -->
+    <img class="Logo" src="logo.png" alt="">
+    <div class="Titolo">
+        <h1> Taking Booleans from A to B </h1>
+    </div>
+    <!-- Menu -->
+    <nav class="Menu">
+        <select name="Prenotazione">
+            <option value=""> Prenota </option>
+            <option value="Prenota1"> Monopattino 1 </option>
+            <option value="Prenota2"> Monopattino 2 </option>
+            <option value="Prenota3"> Monopattino 3 </option>
+        </select>
+        <!-- Button Menu -->
+        <button type="button"  onclick="AlertPrenotazione()" name="button"> Conferma Prenotazione </button>
+        <button type="button" name="button"> Termina Prenotazione </button>
+        <button type="button" onclick="myFunction()"> Accendi Luci </button>
+    </nav>
+    <!-- Lista Monopattini -->
+    <main class="lista">
+        <ul>
+            <section class="nomi">
+                <li><h2>Monopattino Gino22</h2></li>
+                <li><u><a target="_blank" href="https://www.google.com/maps/@41.29085,12.71216,6z">Via Guadalametri</a> </u> - a 220 metri da te </li>
+                Stato carica :
+                <div class="primo"><strong>43%</strong></div>
+            </section>
+            <section class="nomi">
+                  <li><h2>Monopattino Mike24</h2></li>
+                  <li><u><a target="_blank" href="https://www.google.com/maps/@41.29085,12.71216,6z">Via Ricciardoni</a></u> - a 420 metri da te </li>
+                  Stato carica :
+                 <div class="secondo"><strong>65%</strong></div>
+            </section>
+            <section class="nomi">
+                  <li> <h2>Monopattino Fede154</h2></li>
+                  <li><u><a target="_blank" href="https://www.google.com/maps/@41.29085,12.71216,6z">Via Mentarini</a></u> - a 490 metri da te </li>
+                  Stato carica :
+                  <div class="terzo"><strong>12%</strong></div>
+            </section>
+        </ul>
+
+    <!-- Script Alert Prenotazione Confermata -->
+    <script>
+        function AlertPrenotazione() {
+        alert("Prenotazione confermata!");
+        }
+    </script>
+
+    <!-- Script Illuminazione Sfondo -->
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+        }
+    </script>
+
+    </main>
+  </div>
+</body>
+</HTML>
